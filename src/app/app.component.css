@@ -1,3 +1,7 @@
+/* .container-fluid {
+  background-color: #f2f2f2;
+} */
+
 ul li {
   display: inline-block;
   padding-left: 10px;
@@ -6,5 +10,5 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
