@@ -1,8 +1,8 @@
-<div class="container-fluid">
+<div class="container">
   <h2 class="text-center">Create a new Goal</h2>
-  <hr>
+  
   <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
-      <div class="form-group">
+      <div class="form-group my-3">
 
           <label for="name">Name</label>
           <!-- <input type="text" required class="form-control" id="name"> -->
@@ -12,10 +12,10 @@
             <p>Name is required</p>
           </div>
 <!-- Testing to see if we get any data -->
-Display {{newGoal.name}}
+<!-- Name {{newGoal.name}} -->
       </div>
 
-      <div class="form-group">
+      <div class="form-group my-3">
 
           <label for="description">Description</label>
           <!-- <textarea class="form-control" id="description" rows="4" required></textarea> -->
@@ -26,10 +26,10 @@ Display {{newGoal.name}}
           </div>
       </div>
 
-      <div class="form-group">
-          <label for="complete">Completion</label>
+      <div class="form-group my-3">
+          <label for="complete">Completion:</label>
           <!-- <input type='date' id="complete" required> -->
-          <input type='date' id="complete" [(ngModel)]="newGoal.completeDate" name="completeDate" #completeDate="ngModel" required>
+          <input class="mx-2" type='date' id="complete" [(ngModel)]="newGoal.completeDate" name="completeDate" #completeDate="ngModel" required>
           <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
             <p>Date is required</p>
           </div>
