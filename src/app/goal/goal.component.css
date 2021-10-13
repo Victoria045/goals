@@ -5,6 +5,10 @@
   border-radius: 5px;
 }
 
+.btn{
+  margin:2px;
+}
+
 @media screen and (max-width: 1366px) {
    .goals{
     margin-top:50px;
