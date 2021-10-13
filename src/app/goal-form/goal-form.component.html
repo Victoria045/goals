@@ -29,7 +29,7 @@
       <div class="form-group my-3">
           <label for="complete">Completion:</label>
           <!-- <input type='date' id="complete" required> -->
-          <input class="mx-2" type='date' id="complete" [(ngModel)]="newGoal.completeDate" name="completeDate" #completeDate="ngModel" required>
+          <input class="mx-2 date" type='date' id="complete" [(ngModel)]="newGoal.completeDate" name="completeDate" #completeDate="ngModel" required>
           <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
             <p>Date is required</p>
           </div>
